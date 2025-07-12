@@ -8,10 +8,10 @@ gem 'net-smtp', require: false
 gem 'json'
 
 gem 'eventmachine', '~> 1.2', '>= 1.2.7'
-gem 'thin', '~> 1.8'
-gem 'sinatra', '~> 3.2'
+gem 'thin', '~> 2.0', '>= 2.0.0'
+gem 'sinatra', '~> 4.0', '>= 4.0.0'
 gem 'rack', '~> 2.2'
-gem 'rack-protection', '~> 3.2.0'
+gem 'rack-protection', '~> 4.0.0'
 gem 'em-websocket', '~> 0.5.3' # WebSocket support
 gem 'uglifier', '~> 4.2'
 gem 'mime-types', '~> 3.5'
@@ -78,7 +78,7 @@ group :test do
     # Note: selenium-webdriver 3.x is incompatible with Firefox version 48 and prior
     # gem 'selenium' # Requires old version of selenium which is no longer available
     gem 'geckodriver-helper', '~> 0.24.0'
-    gem 'selenium-webdriver', '~> 4.24'
+    gem 'selenium-webdriver', '~> 4.25', '>= 4.25.0'
 
     # Note: nokogiri is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
